@@ -1,0 +1,265 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+span,
+a,
+ion-icon {
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff80;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #0780ff50;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0780ff50;
+}
+
+.event {
+  padding: 80px 80px;
+  /* background: #0780ff50; */
+}
+
+.event-left {
+  position: relative;
+  max-width: max-content;
+  margin-bottom: 50px;
+}
+
+.event .banner-img {
+  width: auto;
+  max-width: 75%;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 450px) {
+  .event .banner-img {
+    display: none;
+  }
+}
+
+.event .section-subtitle {
+  margin-bottom: 15px;
+}
+
+.event .section-title {
+  margin-bottom: 30px;
+}
+
+.event-card-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.event-card {
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 25px;
+  margin-right: 25px;
+  border-right: 7.5px solid transparent;
+  box-shadow: 0 10px 30px hsla(0, 0%, 0%, 0.1);
+  transition: 0.25s ease;
+}
+
+.event-card .content-left {
+  width: 15%;
+  text-align: left;
+  padding: 5px;
+  box-shadow: 0 16px 0 -15px #ffffff80;
+}
+
+.event-card .stock {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: hsl(216, 98%, 52%);
+}
+
+.event-card .event-name {
+  color: hsl(217, 100%, 20%);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  transition: 0.25s ease;
+}
+
+.event-card:hover {
+  border-color: #ef2f88;
+}
+
+.event-card:hover .event-name {
+  color: #ef2f88;
+}
+
+@media only screen and (max-width: 450px) {
+  .event {
+    padding: 30px;
+    /* background: #0780ff50; */
+  }
+
+  .event-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  .event-card .content-left {
+    width: 100px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-right: 15px;
+    margin-right: 25px;
+    box-shadow: 1px 0 0 0 #ffffff80;
+  }
+
+  .event-card .event-name {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .event {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .event-left {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .event {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.button {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  color: #fff;
+  padding: 20px 45px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.button .button-text {
+  position: relative;
+  z-index: 5;
+}
+
+.button-text-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.button-primary,
+.button-secondary .square {
+  background: #ef2f88;
+}
+
+.button .square {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  transition: 0.25s ease;
+}
+
+.button:hover .square {
+  right: -2px;
+  width: 102%;
+  height: 102%;
+}
+
+.button-primary .square,
+.button-secondary {
+  background: #03045e;
+}
+
+/* Pagination */
+
+.pagination-hurray {
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  margin: 6rem;
+  border-radius: 0.6rem;
+  background: #ffffff;
+  box-shadow: 0 10px 30px hsla(0, 0%, 0%, 0.25);
+}
+
+.page-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem;
+  cursor: pointer;
+}
+
+.page-link {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #113cfc;
+}
+
+.page-link:hover {
+  color: #ef2f88;
+}

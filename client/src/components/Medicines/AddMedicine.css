@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Dongle:wght@300;400;700&family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600&family=Varela+Round&display=swap");
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.addNew__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 5rem;
+}
+
+.addNew__left__wrapper {
+  max-width: 475px;
+}
+
+.addNew__imgWrapper {
+  max-width: 500px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .addNew__wrapper {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .addNew__left {
+    flex: 1.5;
+  }
+
+  .addNew__right {
+    flex: 2;
+  }
+
+  .addNew__imgWrapper {
+    max-width: none;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .addNew__left,
+  .addNew__right {
+    flex: 1;
+  }
+}
+
+.addNew-box {
+  width: 400px;
+  padding: 40px;
+  border: 5px solid #77acf1;
+  background: #caf0f8;
+  box-sizing: border-box;
+  box-shadow: 10px 15px 20px #77acf1;
+  border-radius: 12px;
+}
+
+.addNew-box .user-box {
+  position: relative;
+}
+
+.addNew-box .user-box input {
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px 0;
+  color: #2d31fa;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #151d3b;
+  outline: none;
+  background: transparent;
+}
+
+.addNew-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #2d31fa;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.addNew-box .user-box input:focus ~ label,
+.addNew-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #2d31fa;
+  font-size: 12px;
+}
+
+input {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.AddNew-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #2d31fa;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 3px;
+}
+
+.addButton {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  color: #150050;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+  letter-spacing: 3px;
+}

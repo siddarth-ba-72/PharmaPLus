@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Dongle:wght@300;400;700&family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600&family=Varela+Round&display=swap");
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.meds__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 5rem;
+}
+
+.meds__left__wrapper {
+  max-width: 475px;
+  margin: 4rem;
+}
+
+.meds__imgWrapper {
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .meds__wrapper {
+    flex-direction: row;
+    gap: 0;
+  }
+  .meds__left {
+    flex: 1.5;
+  }
+
+  .meds__right {
+    flex: 2;
+  }
+
+  .meds__imgWrapper {
+    max-width: none;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .meds__left,
+  .meds__right {
+    flex: 1;
+  }
+}
+/* #caf0f8 */
+.meds-box {
+  width: 400px;
+  padding: 40px;
+  border: 4px solid #77acf1;
+  background: #caf0f8;
+  box-sizing: border-box;
+  box-shadow: 10px 15px 25px #77acf1;
+  border-radius: 12px;
+}
+
+.meds_brand {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #041562;
+  text-align: center;
+}
+
+.meds_h2 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #041562;
+  text-align: center;
+}
+
+.meds_p {
+  font-family: "Varela Round", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0 0 30px;
+  padding: 0;
+  color: #041562;
+  text-align: center;
+}
+
+.AddToCart__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.AddToCart__wrapper button {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #041562;
+  background: #fbf8f1;
+  border: 5px solid #041562;
+  padding: 7px 28px;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-align: center;
+}
+
+.AddToCart__wrapper button:hover {
+  background: #041562;
+  color: #fbf8f1;
+}
+
+.signs_wrapper {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 8px;
+  background: #03045e;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  /* margin-top: 0.8rem; */
+}
+
+.num input {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+  background: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: none;
+  text-align: center;
+}
+
+.minus,
+.plus {
+  font-size: 2.2rem;
+  font-weight: 700;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+/* 
+.admin_stocks {
+  margin-top: 40px;
+  width: 400px;
+  padding: 40px;
+  border: 4px solid #041562;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 10px 15px 25px rgba(50, 88, 130, 0.32);
+  border-radius: 16px;
+}
+
+.det_wrap {
+  border-bottom: 1px solid #000;
+}
+
+.admin_stocks h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.admin_stocks .st_instock,
+.admin_stocks .st_price {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 1.5rem;
+} */

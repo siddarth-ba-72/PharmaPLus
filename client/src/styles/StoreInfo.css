@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Dongle:wght@300;400;700&family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600&family=Varela&family=Varela+Round&display=swap");
+
+/* Store info section styles*/
+.storeInfo__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.storeInfo__item {
+  background-color: #0780ff40;
+  padding: 30px 30px;
+  text-align: center;
+  text-align: center;
+  border-radius: 12px;
+  width: 150px;
+}
+
+.storeInfo__icon {
+  width: 30px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.storeInfo__title {
+  font-size: 1.4rem;
+  font-family: Poppins;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #406882;
+}
+
+.storeInfo__text {
+  font-size: 1.4rem;
+  font-family: "Varela Round", sans-serif;
+  color: #406882;
+}
+
+@media only screen and (min-width: 768px) {
+  .storeInfo__wrapper {
+    gap: 4rem;
+  }
+  .storeInfo__item {
+    min-width: 200px;
+    padding: 40px 0;
+  }
+  .storeInfo__icon {
+    width: 47px;
+    margin-bottom: 2.5rem;
+  }
+  .storeInfo__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .storeInfo__text {
+    font-size: 1.6rem;
+  }
+}

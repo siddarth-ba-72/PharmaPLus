@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Dongle:wght@300;400;700&family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600&family=Varela+Round&display=swap");
+
+/* Shop By Brands */
+.shopByBrand__title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  color: #516beb;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.shopByBrand__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  gap: 1rem;
+}
+
+.shopByBrand__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #0780ff40;
+  padding: 0.75rem;
+  border-radius: 12px;
+  gap: 1rem;
+}
+
+.shopByBrand__item__img {
+  flex: 4;
+}
+
+.shopByBrand__item__img img {
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+@media only screen and (min-width: 768px) {
+  .shopByBrand__title {
+    font-family: "Josefin Sans", sans-serif;
+    color: #516beb;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .shopByBrand__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 6rem;
+  }
+
+  .shopByBrand__item {
+    flex-direction: column;
+    background-color: #0780ff40;
+    padding: 1.5rem;
+    border-radius: 12px;
+    gap: 1rem;
+  }
+}

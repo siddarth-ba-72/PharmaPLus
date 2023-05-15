@@ -1,0 +1,112 @@
+.dashboard {
+  margin: 5rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  background-color: #4d77ff;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px hsla(0, 0%, 0%, 0.1);
+}
+
+.dashboard-card-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.dashboard-card {
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 25px;
+  margin-right: 25px;
+  border-right: 7.5px solid transparent;
+  box-shadow: 0 10px 30px hsla(0, 0%, 0%, 0.1);
+  transition: 0.25s ease;
+}
+
+.dashboard-card .content-left {
+  width: 15%;
+  text-align: left;
+  padding: 5px;
+  box-shadow: 0 16px 0 -15px #ffffff80;
+}
+
+.dashboard-card .content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 85%;
+  padding: 5px;
+}
+
+.dashboard-name {
+}
+
+.dashboard-card .stock {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: hsl(216, 98%, 52%);
+}
+
+.dashboard-card .dashboard-name {
+  color: hsl(217, 100%, 20%);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  transition: 0.25s ease;
+}
+
+.dashboard-card:hover {
+  border-color: #ef2f88;
+}
+
+.dashboard-card:hover .dashboard-name {
+  color: #ef2f88;
+}
+
+.dasboard__wrapper {
+  margin-left: 1rem;
+}
+
+.dasboard__wrapper button {
+  background: hsl(217, 100%, 20%);
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.dasboard__wrapper button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.dasboard__wrapper button:hover {
+  background: #ef2f88;
+  color: #fff;
+  border: 5px solid hsl(217, 100%, 20%);
+}
+
+.dasboard__wrapper button a:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 450px) {
+  .dashboard {
+    display: none;
+  }
+}

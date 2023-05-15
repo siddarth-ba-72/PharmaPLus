@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Dongle:wght@300;400;700&family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600&family=Varela+Round&display=swap");
+
+/* hero section styles */
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 5rem;
+}
+
+.hero__left__wrapper {
+  max-width: 475px;
+}
+
+.hero__imgWrapper {
+  max-width: 500px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero__heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  line-height: 1.4em;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #3b413a;
+}
+
+.hero__info {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: var(--black-2);
+}
+
+.button__wrapper {
+  text-align: center;
+}
+
+.primary-btn {
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  color: #eef2ff;
+  background: #548cff;
+}
+
+@media only screen and (min-width: 700px) {
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__wrapper {
+    flex-direction: row;
+    gap: 0;
+  }
+  .hero__left {
+    flex: 3.5;
+  }
+  .hero__right {
+    flex: 4;
+  }
+  .hero__heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+    text-align: left;
+  }
+
+  .hero__info {
+    font-family: "Dongle", sans-serif;
+    font-weight: 300;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    font-size: 4rem;
+  }
+
+  .button__wrapper {
+    text-align: left;
+  }
+
+  .hero__imgWrapper {
+    max-width: none;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero__heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__info {
+    font-family: "Dongle", sans-serif;
+    font-weight: 300;
+    line-height: 3rem;
+    font-size: 3rem;
+  }
+
+  .hero__left,
+  .hero__right {
+    flex: 1;
+  }
+}
